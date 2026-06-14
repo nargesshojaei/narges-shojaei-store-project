@@ -1,0 +1,32 @@
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: flex;
+}
+
+/* Page 2 hero */
+.hero-bg {
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.65) 55%, rgba(0,0,0,0.95) 100%),
+     center/cover no-repeat;
+}
+
+/* Spinner */
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+/* Page transition */
+.page {
+  transition: opacity 0.3s ease;
+}
